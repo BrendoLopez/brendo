@@ -1,2 +1,2 @@
-# Perfil-Brendo-S.-Lopez-
+# Perfil Brendo S.Lopez.
 Meu perfil como pessoa.
