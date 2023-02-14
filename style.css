@@ -1,49 +1,66 @@
-h1 {
+.meuNome {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: aquamarine;
+  color: black;
   font-family: a;
   margin: auto;
 }
 
-h2 {
-  float: right;
-  right: auto;
+.qualidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: black;
 }
 
-span {
-  color: aquamarine;
-  justify-content: left;
+.redeSocial {
+  color: black;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.redeSocial:visited {
+  color: black;
 }
 
 .sobreMim {
-
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
-.page-log {
+.fotoPerfil {
   border-radius: 50%;
-  position: relative;
-  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
-.wallPaper {
-  position: absolute;
-  z-index: -1;
-  opacity: 0.5; /* 50% de opacidade */
-}
+
 
 body {
-  background-color: rgb(54, 54, 54);
+  background: linear-gradient(to bottom, rgb(156, 155, 155), black);
+  background-size: 400% 400%;
+  animation: gradient 1s ease infinite;
 }
 
-a {
-  color: aquamarine;
+h3 {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
 
 button {
-  background-color: #4caf50;
+  background-color: black;
   border: none;
-  color: white;
+  color: gold;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -52,9 +69,14 @@ button {
   margin: 4px 2px;
   cursor: pointer;
   transition-duration: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 5px;
 }
 
 button:hover {
-  background-color: #3e8e41;
-  color: black;
+  background-color: purple;
+  color: gold;
 }
