@@ -1,30 +1,35 @@
 .meuNome {
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
-  font-family: a;
-  margin: auto;
+  margin: 10px auto;
 }
 
 .qualidades {
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  color: black;
+  margin: 10px auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
 }
 
 .redeSocial {
-  color: black;
   display: flex;
-  justify-content: center;
+  justify-content: column;
   align-items: center;
-  margin: auto;
+  padding: 10px;
+  margin: 0 10px;
 }
 
 .redeSocial:visited {
   color: black;
+}
+
+.redeSocial a{
+  margin: 5px 0;;
 }
 
 .sobreMim {
@@ -32,52 +37,45 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 10px auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 15px;
 }
 .fotoPerfil {
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 7%;
+  width: 20%;
 }
-
 
 body {
-  background: linear-gradient(to bottom, rgb(156, 155, 155), black);
-  background-size: 400% 400%;
-  animation: gradient 1s ease infinite;
-}
-
-h3 {
-  color: black;
+  background: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  height: 100vh;
+  margin: 0;
 }
 
-button {
-  background-color: black;
-  border: none;
-  color: gold;
-  padding: 10px 20px;
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  border-radius: 5px;
 }
 
-button:hover {
-  background-color: purple;
-  color: gold;
+.toolbar{
+  display: flex;
+  justify-content: flex-end; /* Ajusta para a direita */
+  align-items: flex-start;
+  padding: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  position: fixed; /* Fixa a barra no topo */
+  top: 0; /* Coloca a barra no topo da tela */
+  right: 0; /* Coloca a barra à direita */
+  z-index: 1000;
+}
+
+.botaoToolbar{
+  margin: 0 10px;
 }
