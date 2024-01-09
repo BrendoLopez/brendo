@@ -18,7 +18,7 @@
 
 .redeSocial {
   display: flex;
-  justify-content: column;
+  justify-content: center;
   align-items: center;
   padding: 10px;
   margin: 0 10px;
@@ -37,15 +37,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px auto;
+  margin: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 15px;
 }
 .fotoPerfil {
   border-radius: 50%;
   width: 20%;
-  border: 0.1px solid rgb(255, 255, 255);
-  box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.1);
+  border: 0.1px solid #adbfee;
+  box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -68,30 +68,61 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #d2f5aa;
+  background-color: #212227;
   z-index: 1000;
-  width: 100%;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  width: 95%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.349);
+  /* font-weight: bold; */
+  list-style: none;
 }
 
-.botaoToolbar{
-  margin: 0 10px;
+ul li a{
+  text-decoration: none;
+  color: #fefee3;
+}
+
+.toolbar li{
+  padding: 3px;
+  margin: 10px;
+  color: #fefee3;
+}
+.rodape{
+  display: flex;
+  justify-content: flex-start; /* Alterado para flex-start */
+  align-items: flex-end; /* Alterado para flex-end */
+  padding: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  position: fixed;
+  bottom: 0; /* Alterado para bottom */
+  left: 0; /* Alterado para left */
+  background-color: #212227;
+  z-index: 1000;
+  width: 95%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.349);
+  list-style: none;
+}
+.rodape li{
+  padding: 3px;
+  margin: 10px;
+  color: #fefee3;
 }
 
 .info{
   text-align: center;
   margin-left: 30px;
   vertical-align: baseline;
-  border: 0.1px solid rgb(255, 255, 255);
-  box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.1);
+  border: 0.1px solid #cdd4e7;
+  box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.2);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 20px;
+  border-radius: 0 10px 0 10px;
 }
 
 .informes{
@@ -103,4 +134,31 @@ body {
 .informes p{
   margin: 0;
   padding: 0 10px;
+}
+
+.temas {
+  list-style: none;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+.temas:hover {
+  text-decoration: underline;
+}
+
+#infoTemas {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  top: 76vh;
+  left: 85px;
+  color: white;
+}
+
+#infoTemas p a{
+  text-decoration: none;
 }
