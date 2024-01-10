@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   margin: 10px auto;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: sans-serif;
   font-size: 15px;
 }
 
@@ -38,7 +38,7 @@
   justify-content: center;
   align-items: center;
   margin: 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: sans-serif;
   font-size: 15px;
 }
 .fotoPerfil {
@@ -69,7 +69,7 @@ body {
   justify-content: flex-end;
   align-items: flex-start;
   padding: 2px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 20px;
   position: fixed;
   top: 0;
@@ -97,7 +97,7 @@ ul li a{
   justify-content: flex-start; /* Alterado para flex-start */
   align-items: flex-end; /* Alterado para flex-end */
   padding: 2px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 20px;
   position: fixed;
   bottom: 0; /* Alterado para bottom */
@@ -120,7 +120,7 @@ ul li a{
   vertical-align: baseline;
   border: 0.1px solid #cdd4e7;
   box-shadow: 5px 5px 20px 20px rgba(0, 0, 0, 0.2);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: sans-serif;
   font-size: 20px;
   border-radius: 0 10px 0 10px;
 }
