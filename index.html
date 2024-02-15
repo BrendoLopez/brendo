@@ -3,54 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Brendo Sarmento Lopes">
-    <meta name="kaywords" content="html, css, Javascript">
+    <meta name="keywords" content="html, css, Javascript">
     <title>Meu perfil "Brendo Lopez"</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="Eventos.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <ul class="toolbar">
-        <li><a href="Toolbar/Curriculo.html" title="Currículo">Currículo</a></li>
-        <li>|</li>
-        <li><a href="Toolbar/Projetos.html" title="Projetos">Projetos</a></li>
-        <li>|</li>
-        <li><a href="Toolbar/Contato.html" title="Contato">Contato</a></li>
+
+
+<header>
+    <a href="#" class="logo">Devlo<span>pe</span>r..</a>
+    <ul class="navlist">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#experiencias">Experiências</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contato">Contato</a></li>
     </ul>
-    <div class="container">
-        <img src="Photos/Foto brendo.jpg" class="fotoPerfil" alt="">
-        <div class="info">
-            <h1 class="meuNome">Olá! Eu sou o Brendo Lopez 🖐</h1>
-            <p class="qualidades">Highlights: HTML - CSS - Javascript - Excel - .NET - C# - Bootstrap - Notion - Trello</p>
-            <div class="informes">
-                <p>📒 Estudando Lógica de programação</p>  
-                <p>🌎 Vila Velha - ES</p>
-                <p>🛵 Hobby</p>
+</header>
+
+
+
+<section class="home" id="home">
+    <div class="home-text">
+        <div class="slide">
+            <span class="one">Olá</span>
+            <span class="two">prezados(as)!</span>
+        </div>
+        <h1>Brendo S.Lopez</h1>
+        <h3>Desenvolvedor <span>&</span> Quality Assurance.</h3>
+        <p>É um prazer tê-lo aqui, prezado(a)! Para a criação deste portfolio eu utilizei todo meu conhecimento e aprendizado em front-end.</p>
+    </div>
+</section>
+
+
+
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="Photos/Foto brendo.jpg" alt="imagem about">
+    </div>
+    <div class="about-text">
+        <h2>Sobre <span>Mim</span></h2>
+        <h4>Desenvolvedor <span>Full</span> Stack!</h4>
+        <p>"Olá, meu nome é Brendo Sarmento Lopes, tenho 29 anos e sou um entusiasta da tecnologia. Há cerca de 1 ano e 2 meses, tomei a decisão de mudar de carreira e ingressar no campo da tecnologia. Anteriormente, trabalhei em escritórios e sempre observei que a área de TI era composta por pessoas com um estilo de vida semelhante ao meu. Esse fato me motivou a fazer a transição, e hoje posso dizer que estou completamente envolvido e apaixonado por essa área.
+            Durante esse período de transição, adquiri conhecimento em diversas áreas da tecnologia, como desenvolvimento web, programação, banco de dados e outras tecnologias relacionadas. Estou constantemente buscando aprender mais e me manter atualizado com as últimas tendências e tecnologias do mercado.
+            Além disso, também desenvolvi habilidades de resolução de problemas, trabalho em equipe e comunicação, que são essenciais para o sucesso na área de tecnologia.
+            Estou entusiasmado com as oportunidades que o futuro na tecnologia reserva para mim e estou ansioso para contribuir de forma significativa para o avanço desse setor emocionante e em constante evolução."
+        </p>
+    </div>
+</section>
+
+
+<section class="experiencias" id="experiencias">
+    <div class="experiencias-text">
+        <div class="slide">
+            <h2><span>EXPERIÊNCIAS</span></h2>
+        </div>
+        <div class="experiencia-text">
+            <div class="experiencias-empresas">
+                <h4>Quality Assurance - Captar Consultoria Publica</h4>
+                <p>(01/2023 - 01/2024)</p>
+                <p>Minhas atividades incluem analisar as demandas mais urgentes do dia, realizar testes de caixa branca e preta, aprovar pull requests e registrar erros no Trello. Participo de reuniões diárias com a equipe de desenvolvimento, elaboro patch-notes antes das atualizações do sistema e aprovo licitações para novas empresas usarem o sistema. Também viajo para apresentar o sistema em licitações e treino a equipe de suporte.
+                </p>
             </div>
-            <p class="sobreMim">É um prazer tê-lo aqui, prezado(a)! Para a criação deste portfolio eu utilizei todo meu conhecimento e aprendizado em front-end.</p>
-            <div class="redeSocial">
-                <a href="https://github.com/BrendoLopez" target="_blank">
-                    <img src="Photos/icons8-github-64.png" alt="GitHub">
-                </a>
-                <a href="https://www.instagram.com/brendolopez/" target="_blank">
-                    <img src="Photos/icons8-instagram-50.png" alt="Instagram">
-                </a>
-                <a href="https://www.linkedin.com/in/brendo-lopes-2a9144195/" target="_blank">
-                    <img src="Photos/icons8-linkedin-50.png" alt="LinkedIn">
-                </a>
+
+            <div class="experiencias-empresas">
+                <h4>C# .NET Estágio - Captar Consultoria Publica</h4>
+                <p>(12/2023 - 01/2024)</p>
+                <p>Criação de novas funcionalidades para o sistema, elaboração do front-end e back-end de páginas de formulários, solucionamento de problemas.
+                </p>
+            </div>
+
+            <div class="experiencias-empresas">
+                <h4>Assistente Admnistrativo - Eletromarquez LTDA</h4>
+                <p>(06/2014 - 08/2019)</p>
+                <p>Atendimento por telefone aos funcionários da
+                empresa, auxiliar com referencias coletadas em programas e no Google maps
+                para que funcionário ache endereço em campo, assistência nos
+                computadores da empresa, como limpeza e higienização até formatação e
+                instalação de programas, organização de rotas de campo, refaturamento de
+                leituras erradas por funcionários de campo, confecção de planilhas e analise
+                de emails
+                </p>
             </div>
         </div>
     </div>
-    <ul class="rodape">
-        <li><a href="#">Email</a></li>
-        <li>|</li>
-        <li class="temas" onmouseover="mostrarInfoTemas()">Temas</li>
-        <li>|</li>
-        <li><a href="#">Feedback</a></li>
-    </ul>
-    <div id="infoTemas">
-        <p id="themeWhite"><a href="#" onclick="mudarTemaWhite()">⚪</a></p>
-        <p id="themeBlack"><a href="#" onclick="mudarTemaBlack()">⚫</a></p>
-        <p id="themeOriginal"><a href="#" onclick="mudarTemaOriginal()">🟣</a></p>
-    </div>
+</section>
+    
+
+
 </body>
 </html>
