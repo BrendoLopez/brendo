@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -8,7 +8,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-:root{
+:root {
   --bg-color: #2a2a2a;
   --second-bg-color: #202020;
   --text-color: #fff;
@@ -19,12 +19,13 @@
   --p-font: 1.1rem;
 }
 
-body{
+body {
   background: var(--bg-color);
   color: var(--text-color);
+  margin: 0;
 }
 
-header{
+header {
   position: fixed;
   width: 100%;
   top: 0;
@@ -38,22 +39,22 @@ header{
   transition: all .45s ease;
 }
 
-.logo{
+.logo {
   color: var(--text-color);
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-span{
+span {
   color: var(--main-color)
 }
 
-.navlist{
+.navlist {
   display: flex;
 }
 
-.navlist a{
+.navlist a {
   color: var(--second-color);
   font-size: 17px;
   font-weight: 500;
@@ -61,19 +62,19 @@ span{
   transition: all .45s ease;
 }
 
-.navlist a:hover{
+.navlist a:hover {
   color: var(--main-color);
 }
 
-.navlist a:active{
+.navlist a:active {
   color: var(--main-color);
 }
 
-section{
+section {
   padding: 160px 15% 120px;
 }
 
-.home{
+.home {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -84,11 +85,11 @@ section{
   justify-content: flex-start;
 }
 
-.slide{
+.slide {
   margin-bottom: 20px;
 }
 
-.one{
+.one {
   display: inline-block;
   margin-right: 15px;
   padding: 0 15px;
@@ -100,14 +101,14 @@ section{
   color: var(--bg-color);
 }
 
-.two{
+.two {
   display: inline-block;
   color: var(--second-color);
   font-size: 20px;
   font-weight: 500;
 }
 
-.home-text h1{
+.home-text h1 {
   font-size: var(--big-font);
   font-weight: 700;
   color: var(--text-color);
@@ -115,7 +116,7 @@ section{
   margin: 0 0 8px;
 }
 
-.home-text h3{
+.home-text h3 {
   color: var(--text-color);
   margin: 0 0 35px;
   font-size: 3rem;
@@ -123,14 +124,14 @@ section{
   line-height: 1.1;
 }
 
-.home-text p{
+.home-text p {
   color: var(--second-color);
   font-size: var(--p-font);
   line-height: 1.8;
   margin-bottom: 40px;
 }
 
-.btn{
+.btn {
   display: inline-block;
   padding: 12px;
   background: var(--main-color);
@@ -142,31 +143,31 @@ section{
   transition: all .45s ease;
 }
 
-.btn:hover{
+.btn:hover {
   transform: scale(0.9);
   font-weight: bold;
 }
 
-.about{
+.about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 1.5rem;
 }
 
-.about-img img{
+.about-img img {
   max-width: 530px;
   height: auto;
   width: 100%;
   border-radius: 5px;
 }
 
-.about-text h2{
+.about-text h2 {
   font-size: var(--h2-font);
   line-height: 1;
 }
 
-.about-text h4{
+.about-text h4 {
   font-size: 24px;
   font-weight: 600;
   color: var(--text-color);
@@ -174,104 +175,36 @@ section{
   margin: 15px 0 30px;
 }
 
-.about-text p{
+.about-text p {
   color: var(--second-color);
   font-size: var(--p-font);
   line-height: 1.8;
   margin-bottom: 4rem;
 }
 
-.experiencia-text{
+.experiencias {
+  background: var(--second-bg-color);
+}
+
+.experiencias-text {
   color: var(--second-color);
   font-size: var(--p-font);
   line-height: 1.8;
   margin-bottom: 1rem;
 }
 
-.experiencias-empresas{
+.experiencias-empresas {
   line-height: 1.8;
   margin-bottom: 2rem;
 }
 
-
-
-.portfolio-content{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-  align-items: center;
-  gap: 2.5rem;
-  margin-top: 5rem;
-}
-
-.row{
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.row img{
-  width: 100%;
-  border-radius: 8px;
-  display: block;
-  transition: transform 0.5s;
-}
-
-.layer{
-  width: 100%;
-  height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), #00a6ff);
-  position: absolute;
-  border-radius: 8px;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 40px;
-  transition: height 0.5s;
-}
-
-.layer h5{
-  font: 20px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-.layer p{
-  color: var(--second-color);
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-.layer i{
-  color: var(--main-color);
-  margin-top: 20px;
-  font-size: 20px;
-  background: var(--text-color);
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-}
-
-.row:hover img{
-  transform: scale(1.1);
-}
-
-.row:hover .layer{
-  height: 100%;
-}
-
-.main-text{
+.main-text {
   padding-bottom: 100px;
 }
+
 .project {
   display: inline-block;
-  width: 30%; /* ajuste conforme necessário para o layout desejado */
+  width: 30%;
   margin: 10px;
   border: 1px solid var(--main-color);
   border-radius: 10px;
@@ -279,7 +212,7 @@ section{
   text-decoration: none;
 }
 
-.project:hover{
+.project:hover {
   background-color: #565254;
   transition: all .45s ease;
 }
@@ -287,11 +220,11 @@ section{
 .project img {
   padding-top: 10px;
   max-width: 100%;
-  max-height: 200px; /* ajuste conforme necessário para o layout desejado */
+  max-height: 180px;
   border-radius: 5px;
 }
 
-.project h4{
+.project h4 {
   padding: 15px;
   font-size: 20px;
   color: var(--main-color);
@@ -301,4 +234,241 @@ section{
   padding: 10px;
   font-size: var(--p-font);
   color: var(--second-color);
+}
+
+.contact {
+  background: var(--second-bg-color);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.contact-text h4 {
+  color: var(--text-color);
+  margin: 18px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact-text h2 {
+  font-size: var(--h2-font);
+  line-height: 1;
+}
+
+.contact-text p {
+  color: var(--second-color);
+  font-size: var(--p-font);
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.list {
+  margin-bottom: 2.8rem;
+}
+
+.list li {
+  margin-bottom: 12px;
+}
+
+.list li a {
+  display: block;
+  color: var(--second-color);
+  font-size: 14px;
+  transition: all .45s ease;
+}
+
+.list li a:hover {
+  color: var(--text-color);
+  transform: translateY(5px);
+}
+
+.contact-icons i {
+  height: 45px;
+  width: 45px;
+  color: var(--text-color);
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 15px;
+  transition: all .45s ease;
+}
+
+.contact-icons i:hover {
+  color: var(--main-color);
+}
+
+.contact-form form {
+  position: relative;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  padding: 14px;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 240px;
+}
+
+.contact-form .submit {
+  display: inline-block;
+  font-size: 16px;
+  background: var(--main-color);
+  color: var(--text-color);
+  width: 160px;
+  transition: all .45 ease;
+  color: var(--bg-color);
+}
+
+.contact-form .submit:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.end {
+  padding: 20px 15%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: var(--bg-color);
+}
+
+.last-text p {
+  color: var(--second-color);
+  font-size: 14px;
+}
+
+.last-text p a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.top i {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 15px;
+  color: var(--bg-color);
+  background: var(--main-color);
+
+}
+
+.top:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+      padding: 22px 5%;
+  }
+
+  .logo {
+      font-size: 25px;
+  }
+
+  .navlist {
+      display: none;
+  }
+
+  .navlist a {
+      margin: 0 10px;
+  }
+
+  .navlist.active {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: var(--bg-color);
+      padding: 10px 0;
+      border-radius: 0 0 10px 10px;
+      z-index: 999;
+  }
+
+  .navlist.active a {
+      margin: 10px 0;
+  }
+
+  .home-text h1 {
+      font-size: 3.5rem;
+  }
+
+  .home-text h3 {
+      font-size: 2.5rem;
+  }
+
+  .project {
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo {
+      font-size: 20px;
+  }
+
+  .navlist.active {
+      top: 50px;
+  }
+
+  .home-text h1 {
+      font-size: 2.5rem;
+  }
+
+  .home-text h3 {
+      font-size: 2rem;
+  }
+
+  .about {
+      grid-template-columns: 1fr;
+  }
+
+  .about-img img {
+      max-width: 100%;
+  }
+
+  .experiencias {
+      padding: 80px 15%;
+  }
+
+  .experiencias-text {
+      font-size: 1rem;
+  }
+
+  .contact {
+      grid-template-columns: 1fr;
+  }
+
+  .contact-text p {
+      margin-bottom: 20px;
+  }
+
+  .contact-form form input,
+  .contact-form form textarea {
+      padding: 12px;
+  }
+
+  .contact-form textarea {
+      height: 180px;
+  }
+
+  .end {
+      padding: 20px 5%;
+  }
 }
