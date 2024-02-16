@@ -204,7 +204,7 @@ section {
 
 .project {
   display: inline-block;
-  width: 30%;
+  width: 40%;
   margin: 10px;
   border: 1px solid var(--main-color);
   border-radius: 10px;
