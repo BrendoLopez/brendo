@@ -33,9 +33,8 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  background: transparent;
+  background: var(--bg-color);
   padding: 22px 15%;
-  border-bottom: 1px solid transparent;
   transition: all .45s ease;
 }
 
@@ -98,7 +97,7 @@ section{
   font-weight: 500;
   border-radius: 5px;
   background: var(--main-color);
-  color: var(--text-color);
+  color: var(--bg-color);
 }
 
 .two{
@@ -136,7 +135,7 @@ section{
   padding: 12px;
   background: var(--main-color);
   border-radius: 5px;
-  color: var(--text-color);
+  color: var(--bg-color);
   font-size: 1rem;
   letter-spacing: 1px;
   font-weight: 500;
@@ -145,6 +144,7 @@ section{
 
 .btn:hover{
   transform: scale(0.9);
+  font-weight: bold;
 }
 
 .about{
@@ -191,4 +191,114 @@ section{
 .experiencias-empresas{
   line-height: 1.8;
   margin-bottom: 2rem;
+}
+
+
+
+.portfolio-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+
+.row{
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.row img{
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer{
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #00a6ff);
+  position: absolute;
+  border-radius: 8px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  transition: height 0.5s;
+}
+
+.layer h5{
+  font: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.layer p{
+  color: var(--second-color);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.layer i{
+  color: var(--main-color);
+  margin-top: 20px;
+  font-size: 20px;
+  background: var(--text-color);
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.row:hover img{
+  transform: scale(1.1);
+}
+
+.row:hover .layer{
+  height: 100%;
+}
+
+.main-text{
+  padding-bottom: 100px;
+}
+.project {
+  display: inline-block;
+  width: 30%; /* ajuste conforme necessário para o layout desejado */
+  margin: 10px;
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.project:hover{
+  background-color: #565254;
+  transition: all .45s ease;
+}
+
+.project img {
+  padding-top: 10px;
+  max-width: 100%;
+  max-height: 200px; /* ajuste conforme necessário para o layout desejado */
+  border-radius: 5px;
+}
+
+.project h4{
+  padding: 15px;
+  font-size: 20px;
+  color: var(--main-color);
+}
+
+.project p {
+  padding: 10px;
+  font-size: var(--p-font);
+  color: var(--second-color);
 }
