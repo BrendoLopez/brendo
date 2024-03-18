@@ -199,13 +199,28 @@ section {
 }
 
 .main-text {
-  padding-bottom: 100px;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.projetos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap;
+  justify-content: center; 
 }
 
 .project {
-  display: inline-block;
-  width: 40%;
+  flex: 1 1 300px;
   margin: 10px;
+  max-width: 300px;
+  min-width: 250px;
+  height: 500px;
   border: 1px solid var(--main-color);
   border-radius: 10px;
   text-align: center;
@@ -235,6 +250,7 @@ section {
   font-size: var(--p-font);
   color: var(--second-color);
 }
+
 
 .contact {
   background: var(--second-bg-color);
